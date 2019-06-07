@@ -33,7 +33,7 @@ intellij {
 
 tasks.getByName('runIde') {
     systemProperties = ['java.awt.headless': 'true']
-    args = ['importAndProcess', 'importAndBuild', new File('..', 'jps').getCanonicalFile().getAbsolutePath().toString(), (System.getenv('JDK_18'))]
+    args = ['importAndProcess', 'importAndBuild', new File('..', 'kotlin').getCanonicalFile().getAbsolutePath().toString(), (System.getenv('JDK_18'))]
     maxHeapSize = '2G'
 }
 
